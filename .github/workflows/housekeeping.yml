@@ -61,6 +61,7 @@ jobs:
 
   renovate:
     name: Dependencies
+    if: github.event_name != 'pull_request'
     permissions:
       actions: read
       contents: read
