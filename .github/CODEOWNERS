@@ -4,10 +4,6 @@
 # Legal
 LICENSE* @hashintel/legal
 
-# Turborepo configuration
-turbo.json @hashintel/infra
-task-dependencies.json @hashintel/infra
-
 # GitHub Actions and CI configuration
 /.github/workflows/ @hashintel/infra
 /.github/actions/ @hashintel/infra
