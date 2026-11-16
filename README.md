@@ -18,7 +18,7 @@ These requirements already existed in Labs. Once the shared tooling is available
 
 ## Repository setup
 
-The repository uses HASH's shared PR checks and Renovate workflow. Scheduled dependency updates require the `CF_ACCESS_STAGE_CLIENT_SECRET` and `RENOVATE_TOKEN_ENC_KEY` organization secrets to be made available to this repository.
+The repository uses HASH's shared PR checks and Renovate workflow. Scheduled dependency updates require access to the `VAULT_STAGE_ADDR` and `CF_ACCESS_STAGE_CLIENT_ID` organization variables, plus the `CF_ACCESS_STAGE_CLIENT_SECRET` and `RENOVATE_TOKEN_ENC_KEY` organization secrets. Pull requests validate the workflow and configuration without starting dependency updates.
 
 Block publishing workflows must also be configured before publishing from this repository.
 
