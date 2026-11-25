@@ -4,5 +4,5 @@
     "github>hashintel/actions:renovate-config"
   ],
   "description": "HASH blocks (hashintel/blocks) Renovate configuration",
-  "dependencyDashboardOSVVulnerabilitySummary": "none"
+  "dependencyDashboard": { "osvVulnerabilitySummary": "none" }
 }
