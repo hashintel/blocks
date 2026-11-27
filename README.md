@@ -18,7 +18,7 @@ These requirements already existed in Labs. Once the shared tooling is available
 
 ## Repository setup
 
-The repository uses HASH's shared PR checks and Renovate workflow. Scheduled dependency updates require access to the `VAULT_STAGE_ADDR` and `CF_ACCESS_STAGE_CLIENT_ID` organization variables, plus the `CF_ACCESS_STAGE_CLIENT_SECRET` and `RENOVATE_TOKEN_ENC_KEY` organization secrets. Pull requests validate the workflow and configuration without starting dependency updates.
+The repository uses HASH's shared PR checks and Renovate workflow. Scheduled dependency updates read `VAULT_ADDR`, `CF_ACCESS_CLIENT_ID`, `CF_ACCESS_CLIENT_SECRET` and `RENOVATE_TOKEN_ENC_KEY` from the repository's `Renovate` environment, which only `main` may use. Preflight Lint validates the workflows and the Renovate configuration.
 
 Block publishing workflows must also be configured before publishing from this repository.
 
