@@ -3,26 +3,6 @@
 # Docs: https://gh.io/actions-lockfile
 version: 'v0.0.3'
 workflows:
-    '.github/workflows/housekeeping.yml':
-        - 'actions/checkout@v6.0.2'
-        - 'hashintel/actions@main'
-    '.github/workflows/preflight-target.yml': []
+    '.github/workflows/housekeeping.yml': []
+    '.github/workflows/preflight-edit.yml': []
     '.github/workflows/preflight.yml': []
-dependencies:
-    'actions/checkout@v6.0.2':
-        ref: 'v6.0.2'
-        commit: 'sha1-de0fac2e4500dabe0009e67214ff5f5447ce83dd'
-        owner_id: 44036562
-        repo_id: 197814629
-    'actions/setup-node@v7.1.0':
-        ref: 'v7.1.0'
-        commit: 'sha1-949feb2413d6458794dcd2491c4babbbce0c15c1'
-        owner_id: 44036562
-        repo_id: 189476904
-    'hashintel/actions@main':
-        ref: 'main'
-        commit: 'sha1-06238755f2364521d75a1eaf0b3b397261f46077'
-        owner_id: 22116112
-        repo_id: 1389230708
-        uses:
-            - 'actions/setup-node@v7.1.0'
